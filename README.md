@@ -1,6 +1,9 @@
 # Password Generator
 
-<img width="1682" alt="password-generator" src="https://github.com/user-attachments/assets/33338143-ce3e-4aa5-a7ce-b4283670e90d">
+[![Demo](https://github.com/user-attachments/assets/33338143-ce3e-4aa5-a7ce-b4283670e90d)](https://playful-fudge-01ad0f.netlify.app/)
+
+> Click the image to view the demo. The link will open in the current tab (press `Ctrl + Click` or `Cmd + Click` to open in a new tab).
+
 
 ## Description
 
