@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Added viewport meta tag -->
     <title>Password Generator</title>
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,8 +12,8 @@
 
 <body>
     <div id="generator">
-        <h2 class="h one">Generate a</h2>
-        <h2 class="h two">random password</h2>
+        <!-- Header section -->
+        <h1>Generate a <span>random password</span></h1> <!-- Used h1 and span for readability -->
 
         <p>Never use an insecure password again.</p>
 
@@ -20,31 +21,32 @@
 
         <hr class="line one">
 
-        <!-- FILTERS -->
-         <div class="filters">
-          <div class="filter">
-            <label>
-              <input type="checkbox" id="include-symbols" checked>
-              Include Symbols
-          </label>
-          <label>
-              <input type="checkbox" id="include-numbers" checked>
-              Include Numbers
-          </label>
-          </div>
+        <!-- Filter section wrapped in a form -->
+        <form class="filters">
+            <div class="filter">
+                <label>
+                    <input type="checkbox" id="include-symbols" checked>
+                    Include Symbols
+                </label>
+                <label>
+                    <input type="checkbox" id="include-numbers" checked>
+                    Include Numbers
+                </label>
+            </div>
 
-          <div class="range-box">
-            <input type="range" id="length" min="1" max="16" value="9">
-            <span class="slider-number" id="slider-number">9</span>
-          </div>
+            <div class="range-box">
+                <input type="range" id="length" min="8" max="18" value="13"> <!-- Set minimum to 8 for security -->
+                <span class="slider-number" id="slider-number">13</span>
+            </div>
 
-          <hr>
+            <hr>
 
-          <div id="passwords">
-              <div class="form one" id="form-one"></div>
-              <div class="form two" id="form-two"></div>
-          </div>
-        </div>
+            <div id="passwords">
+                <div class="form one" id="form-one"></div>
+                <div class="form two" id="form-two"></div>
+            </div>
+        </form>
+    </div>
 
     <script src="index.js"></script>
 </body>
